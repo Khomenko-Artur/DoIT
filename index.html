@@ -5,12 +5,209 @@
   <title>For DOIT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>  <!-- Библиотека для input range -->
 <script src="js/js.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css"> <!-- Библиотека для input range -->
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
+<div id="preload"><img src="img/giphy.gif"/></div>
+<div id="show_site">
+<header>
+	<aside id="slider_top">
+		<div id="slider_nav">
+			<div id="left_b"></div>
+			<div id="right_b"></div>
+			<div id="selector">
+			</div>
+		</div>
+		<div id="img_inner">
+			<img src="img/slide_1.jpg"/>
+			<img src="img/slide_2.jpg"/>
+			<img src="img/slide_3.jpg"/>
+			<!-- Добавлять можно сколько угодно -->
+		</div>
+	</aside>
+	<aside id="social">
+		<div><a href="#"><img src="img/tw.png"/></a></div>
+		<div><a href="#"><img src="img/bl.png"/></a></div>
+		<div><a href="#"><img src="img/gg.png"/></a></div>
+		<div><a href="#"><img src="img/fb.png"/></a></div>
+	</aside>
+	<aside id="user">
+		<img src="img/tony.jpg"/>
+		<h2>Tony Stark is Iron Man</h2>
+		<h3>posted 22.02.1978</h3>
+		<div id="user_nav">
+			<a href="#"><div class="user_link"><div><img src="img/view.png"/>123</div></div></a>
+			<a href="#"><div class="user_link"><div><img src="img/coment.png"/>12</div></div></a>
+			<a href="#"><div class="user_link"><div><img src="img/like.png"/>12</div></div></a>
+		</div>
+	</aside>
+	<div class="clear_fix"> </div>
+</header>
+<main>
+	<section>
+	<nav> 
+		<div class="punkt"><img src="img/home.png"/></div>
+		<div class="punkt"><div>About</div></div>
+		<div class="punkt"><div>Services</div></div>
+		<div class="punkt"><div>Portfolio</div></div>
+		<div class="punkt"><div>Blog</div></div>
+		<div class="punkt"><div>Contact</div></div>
+		<div class="punkt">
+			<form>
+					<input id="form_search" type="search" name="q">
+					<input id="submit_search" type="submit" value="">
+			</form>
+		</div>
+	</nav>
+		<aside id="author">
+			<div id="avatar">
+				<img src="img/avatar.jpg"/>
+			</div>
+			<h2>User of the Year</h2>
+			<h3>Black Widow</h3>
+			<div id="follow">
+				<div>Follow <img src="img/follow.png"/></div>
+			</div>
+		</aside>
+		<aside id="weather">
+			<div id="geo">Exeter, UK</div>
+			<div id="temp"><span class="selected_t">&#176;C </span><span> &#176;F</span></div>
+			<div id="weather_nav">
+				<div class="weather_link"><div><img src="img/w1.png"/><br/>Sunday</div></div>
+				<div class="weather_link"><div><img src="img/w2.png"/><br/>Monday</div></div>
+				<div class="weather_link"><div><img src="img/w3.png"/><br/>Tuesday</div></div>
+				<div class="weather_link"><div><img src="img/w4.png"/><br/>Wednesday</div></div>
+			</div>
+			<div class="curent_weather">
+			<img src="img/cw.png"/>
+			<span></span>
+			</div>
+		</aside>
+		<aside id="kalendar">
+			<div id="month">
+				<h3>August 2017</h3>
+				<div id="left_m"></div>
+				<div id="right_m"></div>
+			</div>
+			<table>
+				<tr>
+					<th>M</th>
+					<th>T</th>
+					<th>W</th>
+					<th>T</th>
+					<th>F</th>
+					<th>S</th>
+					<th>S</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>30</td>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</aside>
+	</section>
+	<section>
+		<aside>
+			<div class="sub_punkt_hidder">
+				<div class="sub_punkt">Web Desigb<span></span></div>
+				<div class="sub_suber">Web Web<span>2</span></div>
+				<div class="sub_suber">Web Web<span>1</span></div>
+				<div class="sub_suber">Web Web<span>3</span></div>
+			</div>
+			<div class="sub_punkt_hidder">
+				<div class="sub_punkt">Print Design<span></span></div>
+				<div class="sub_suber">Print Print<span>1</span></div>
+				<div class="sub_suber">Print Print<span>1</span></div>
+				<div class="sub_suber">Print Print<span>7</span></div>
+				<div class="sub_suber">Print Print<span>4</span></div>
+			</div>
+			<div class="sub_punkt_hidder">
+				<div class="sub_punkt">Photography<span></span></div>
+				<div class="sub_suber">Photo Photo<span>11</span></div>
+				<div class="sub_suber">Photo Photo<span>2</span></div>
+				<div class="sub_suber">Photo Photo<span>9</span></div>
+				<div class="sub_suber">Photo Photo<span>4</span></div>
+				<div class="sub_suber">Photo Photo<span>1</span></div>
+			</div>
+		</aside>
+		<aside>
+		<div class="swiches">
+			SWITCH ON
+			<label class="switch">
+				<input type="checkbox" checked>
+				<span class="slider_togle round"></span>
+			</label>
+		</div>
+		<div class="swiches">
+			SWITCH OFF
+			<label class="switch">
+				<input type="checkbox">
+				<span class="slider_togle round"></span>
+			</label>
+		</div>
+		<div class="swiches">
+			<div>
+				<div id="slider"></div>
+			</div>
+		</div>
+		</aside>
+	</section>
+	<div class="clear_fix"> </div>
+</main>
 
-
+<footer>
+	<form id="form" onsubmit="return validate()">
+		<input type="text" id="form_name" class="valid"  name="answer" value="Name"><Br>
+		<input type="text" id="form_phone" class="valid"  name="answer" value="Phone"><Br>
+		<input type="submit" id="submit" value="Send">
+	</form>
+</footer>
+</div>
 </body>
 </html>
